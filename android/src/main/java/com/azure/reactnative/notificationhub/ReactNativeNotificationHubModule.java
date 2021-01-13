@@ -179,7 +179,6 @@ public class ReactNativeNotificationHubModule extends ReactContextBaseJavaModule
         Intent intent = ReactNativeNotificationHubUtil.IntentFactory.createIntent(
                 reactContext, ReactNativeRegistrationIntentService.class);
         ReactNativeRegistrationIntentService.enqueueWork(reactContext, intent);
-
         WritableMap res = Arguments.createMap();
         res.putString(KEY_PROMISE_RESOLVE_UUID, uuid);
         res.putString(KEY_FOR_PREFS_FCMTOKEN, fcmToken);
