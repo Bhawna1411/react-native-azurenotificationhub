@@ -159,7 +159,7 @@ public class ReactNativeNotificationHubModule extends ReactContextBaseJavaModule
             uuid = ReactNativeUtil.genUUID();
             notificationHubUtil.setUUID(reactContext, uuid);
         }
-
+        String fcmToken = notificationHubUtil.getFCMToken(reactContext);
         GoogleApiAvailability apiAvailability = GoogleApiAvailability.getInstance();
         int resultCode = apiAvailability.isGooglePlayServicesAvailable(reactContext);
         if (resultCode != ConnectionResult.SUCCESS) {
@@ -182,6 +182,16 @@ public class ReactNativeNotificationHubModule extends ReactContextBaseJavaModule
 
         WritableMap res = Arguments.createMap();
         res.putString(KEY_PROMISE_RESOLVE_UUID, uuid);
+        res.putString(KEY_FOR_PREFS_FCMTOKEN, fcmToken);
+        promise.resolve(res);
+    }
+    @ReactMethod
+    public void getFCMToken(Promise promise) {
+        ReactNativeNotificationHubUtil notificationHubUtil = ReactNativeNotificationHubUtil.getInstance();
+        ReactContext reactContext = getReactApplicationContext();
+        String fcmToken = notificationHubUtil.getFCMToken(reactContext);       
+        WritableMap res = Arguments.createMap();
+        res.putString(KEY_FOR_PREFS_FCMTOKEN, fcmToken);
         promise.resolve(res);
     }
 
