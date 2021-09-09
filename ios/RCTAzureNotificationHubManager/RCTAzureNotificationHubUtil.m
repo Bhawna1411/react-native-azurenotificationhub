@@ -30,7 +30,6 @@
         NSString *dateString = [formatter stringFromDate:notification.date];
         formattedNotification[@"date"] = dateString;
     }
-
     formattedNotification[@"title"] = RCTNullIfNil(content.title);
     formattedNotification[@"thread-id"] = RCTNullIfNil(content.threadIdentifier);
     formattedNotification[@"alertBody"] = RCTNullIfNil(content.body);
@@ -53,7 +52,7 @@
         NSString *fireDateString = [formatter stringFromDate:notification.fireDate];
         formattedLocalNotification[@"fireDate"] = fireDateString;
     }
-
+    
     formattedLocalNotification[@"alertAction"] = RCTNullIfNil(notification.alertAction);
     formattedLocalNotification[@"alertBody"] = RCTNullIfNil(notification.alertBody);
     formattedLocalNotification[@"applicationIconBadgeNumber"] = @(notification.applicationIconBadgeNumber);

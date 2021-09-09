@@ -1,0 +1,30 @@
+com/azure/reactnative/notificationhub/ReactNativeRegistrationIntentService.java
+ com.azure.reactnative.notificationhub.ReactNativeRegistrationIntentService
+ com.azure.reactnative.notificationhub.ReactNativeRegistrationIntentService$1
+com/azure/reactnative/notificationhub/ReactNativeNotificationHubUtil.java
+ com.azure.reactnative.notificationhub.ReactNativeNotificationHubUtil
+ com.azure.reactnative.notificationhub.ReactNativeNotificationHubUtil$IntentFactory
+com/azure/reactnative/notificationhub/BuildConfig.java
+ com.azure.reactnative.notificationhub.BuildConfig
+com/azure/reactnative/notificationhub/ReactNativeFirebaseMessagingService.java
+ com.azure.reactnative.notificationhub.ReactNativeFirebaseMessagingService
+com/azure/reactnative/notificationhub/ReactNativeNotificationsHandler.java
+ com.azure.reactnative.notificationhub.ReactNativeNotificationsHandler
+ com.azure.reactnative.notificationhub.ReactNativeNotificationsHandler$1
+ com.azure.reactnative.notificationhub.ReactNativeNotificationsHandler$2
+ com.azure.reactnative.notificationhub.ReactNativeNotificationsHandler$3
+com/azure/reactnative/notificationhub/ReactNativeConstants.java
+ com.azure.reactnative.notificationhub.ReactNativeConstants
+com/azure/reactnative/notificationhub/ReactNativeNotificationHubModule.java
+ com.azure.reactnative.notificationhub.ReactNativeNotificationHubModule
+ com.azure.reactnative.notificationhub.ReactNativeNotificationHubModule$GoogleApiAvailabilityRunnable
+ com.azure.reactnative.notificationhub.ReactNativeNotificationHubModule$LocalBroadcastReceiver
+com/azure/reactnative/notificationhub/ReactNativeUtil.java
+ com.azure.reactnative.notificationhub.ReactNativeUtil
+ com.azure.reactnative.notificationhub.ReactNativeUtil$UrlWrapper
+com/azure/reactnative/notificationhub/ReactNativeNotificationChannelBuilder.java
+ com.azure.reactnative.notificationhub.ReactNativeNotificationChannelBuilder
+ com.azure.reactnative.notificationhub.ReactNativeNotificationChannelBuilder$1
+ com.azure.reactnative.notificationhub.ReactNativeNotificationChannelBuilder$Factory
+com/azure/reactnative/notificationhub/ReactNativeNotificationHubPackage.java
+ com.azure.reactnative.notificationhub.ReactNativeNotificationHubPackage

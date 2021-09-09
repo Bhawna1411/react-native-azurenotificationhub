@@ -11,8 +11,8 @@
  */
 'use strict';
 
-import {NativeEventEmitter} from 'react-native';
-import {NativeModules} from 'react-native';
+import { NativeEventEmitter } from 'react-native';
+import { NativeModules } from 'react-native';
 
 const RCTAzureNotificationHubManager = NativeModules.AzureNotificationHubManager;
 const invariant = require('fbjs/lib/invariant');
@@ -21,12 +21,12 @@ const PushNotificationEmitter = new NativeEventEmitter(RCTAzureNotificationHubMa
 
 const _notifHandlers = new Map();
 
-const DEVICE_LOCAL_NOTIF_EVENT                  = 'localNotificationReceived';
-const DEVICE_NOTIF_EVENT                        = 'remoteNotificationReceived';
-const NOTIF_REGISTER_EVENT                      = 'remoteNotificationRegistered';
-const NOTIF_REGISTRATION_ERROR_EVENT            = 'remoteNotificationRegisteredError';
-const NOTIF_REGISTER_AZURE_HUB_EVENT            = 'azureNotificationHubRegistered';
-const NOTIF_AZURE_HUB_REGISTRATION_ERROR_EVENT  = 'azureNotificationHubRegisteredError';
+const DEVICE_LOCAL_NOTIF_EVENT = 'localNotificationReceived';
+const DEVICE_NOTIF_EVENT = 'remoteNotificationReceived';
+const NOTIF_REGISTER_EVENT = 'remoteNotificationRegistered';
+const NOTIF_REGISTRATION_ERROR_EVENT = 'remoteNotificationRegisteredError';
+const NOTIF_REGISTER_AZURE_HUB_EVENT = 'azureNotificationHubRegistered';
+const NOTIF_AZURE_HUB_REGISTRATION_ERROR_EVENT = 'azureNotificationHubRegisteredError';
 
 /**
  * An event emitted by AzureNotificationHubIOS.
@@ -223,7 +223,7 @@ class AzureNotificationHubIOS {
     );
     var listener;
     if (type === 'notification') {
-      listener =  PushNotificationEmitter.addListener(
+      listener = PushNotificationEmitter.addListener(
         DEVICE_NOTIF_EVENT,
         (notifData) => {
           handler(new AzureNotificationHubIOS(notifData));
